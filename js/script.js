@@ -50,4 +50,10 @@ new Vue({
         
         ],
     },
+    
+   /* methods:{
+        ottieniImmagine (numero){
+            return 'img/avatar' + numero + '.jpg';
+        }
+    }*/
 })
