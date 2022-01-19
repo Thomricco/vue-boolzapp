@@ -54,21 +54,24 @@
                     <nav class="navbar">
                         <div class="d-flex" >
                             <img src="img/avatar_1.jpg" class="avatar-img">
-                            <div class="text-avatar">Michele
+                            <div class="text-avatar"> {{contacts[currentIndex].name}}
                                 <p class="text-gray">Ultimo messaggio alle ore</p>
                             </div>
                     
                         </div>
                     </nav>
 
-                    <div class="conainer-messaggi">
-                        <div class=" p-2 messaggi-inviati">
-                            hai portato a spasso il cane
+                    <div class="container-messaggi">
+                        <div class=""> 
+                            <div v-for="message in contacts[currentIndex].messages" 
+                                 class="d-flex flex-nowrap m-2 p-2"
+                                 :class="[message.status === 'sent' ? 'messaggi-inviati' : 'messaggi-ricevuti']">
+                                {{ message.text }}
+                            </div>
                         </div>
-    
-                        <div class=" p-2 messaggi-ricevuti">
-                            si certo
-                        </div>
+                            
+                            
+                        
                     </div>
                     
         
@@ -85,7 +88,7 @@
                 <nav class="nav-footer">
                     <div class="d-flex m-2" >
                         <i class="far fa-smile"></i>
-                        <input class="cerca c-footer" placeholder="cerca">
+                        <input v-model="textTemoporaneo" @keyup.enter="inviaMessaggio" class="cerca c-footer" placeholder="cerca">
                         <i class="fas fa-microphone"></i>
                     </div>
                 </nav>

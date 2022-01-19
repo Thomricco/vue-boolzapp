@@ -106,6 +106,7 @@ body {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     height: calc(100vh - 60px);
     width: calc(100% - 300px);
     background-image: url("../img/mine.jpg");
@@ -146,24 +147,19 @@ footer {
     margin-right: 20px;
 }
 
-.conteiner-messaggi {
-    position: relative;
+.container-messaggi {
+    width: 400px;
 }
+
 .messaggi-inviati {
-    position: absolute;
     width: 200px;
     background-color: rgb(18, 140, 126);
-    top: 100px;
-    right: 300px;
     border-radius: 10px;
 }
 
 .messaggi-ricevuti {
-    position: absolute;
     width: 200px;
     background-color: #faf6f2;
-    top: 200px;
-    right: 500px;
     border-radius: 10px;
     
 }
