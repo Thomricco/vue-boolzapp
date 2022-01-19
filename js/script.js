@@ -89,31 +89,15 @@ new Vue({
         ],
         textTemoporaneo: '',
         
-        cerca: '',
     },
 
-    /*methods: {
+    methods: {
         inviaMessaggio: function() {
-            this.contacts.push({[currentIndex].messages.text: this.textTemoporaneo})
+            this.contacts.push({text: this.textTemoporaneo})
             this.textTemoporaneo = ''
-        },/*
+        },
 
-
-
-funzione time
-        ('click', function () {
-    clearInterval(interval);
-});
-
-setTimeout(function () {
-    clearInterval(interval);
-}, 10000)
-
-ricerca utente: function() {
-    
-}
-
-
+        
     }
    /* methods:{
         ottieniImmagine (numero){

@@ -53,7 +53,7 @@
                 <main>
                     <nav class="navbar">
                         <div class="d-flex" >
-                            <img src="img/avatar_1.jpg" class="avatar-img">
+                            <img :src="'img/avatar' + contacts[currentIndex].avatar + '.jpg'" class="avatar-img">
                             <div class="text-avatar"> {{contacts[currentIndex].name}}
                                 <p class="text-gray">Ultimo messaggio alle ore</p>
                             </div>
