@@ -93,17 +93,20 @@ new Vue({
 
     methods: {
         inviaMessaggio: function() {
-            this.contacts.push({text: this.textTemoporaneo})
-            this.textTemoporaneo = ''
+            this.contacts[this.currentIndex].messages.push({text: this.textTemporaneo, status: 'sent'})
+            this.textTemporaneo = ''
         },
 
-        
+        /*showContact: function(index) {
+            this.currentIndex.push(index,1)
+            
+            
+            showContact: function(index) {
+            this.contacts[this.currentIndex].s(index,1)
+        },
+        },*/
     }
-   /* methods:{
-        ottieniImmagine (numero){
-            return 'img/avatar' + numero + '.jpg';
-        }
-    }*/
+  
 })
 
 

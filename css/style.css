@@ -110,7 +110,7 @@ main {
     height: calc(100vh - 60px);
     width: calc(100% - 300px);
     background-image: url("../img/mine.jpg");
-    overflow: scroll;
+    overflow: auto;
     min-height: 120px;
 }
 
