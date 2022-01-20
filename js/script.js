@@ -88,6 +88,7 @@ new Vue({
             },
         ],
         textTemoporaneo: '',
+        filtraContatti: '',
         
     },
 
@@ -95,9 +96,7 @@ new Vue({
 
         showContact(index) {
             this.currentIndex = (index);
-            setTimeout(()=> {
-                this.contacts[this.currentIndex].this.autoRisposta
-            }, 1000)
+            
         },
 
         inviaMessaggio() {
@@ -105,7 +104,10 @@ new Vue({
                 date: '10/01/2020 15:50:00',
                 text: this.textTemporaneo, 
                 status: 'sent'})
-            this.textTemporaneo = ''
+            this.textTemporaneo = '',
+            setTimeout(()=> {
+                this.contacts[this.currentIndex].this.autoRisposta
+            }, 1000)
         },
 
         

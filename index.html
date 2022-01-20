@@ -37,12 +37,13 @@
                             </div>
                         </div>
 
-                        <input class="cerca" placeholder="cerca">
+                        <input v-model="filtraContatti" class="cerca" placeholder="cerca">
                              
             
                         <div v-for="(item, i) in contacts" 
                             @click="showContact(index)" 
                             class=" d-flex box-avatar" >
+                            <!-- <div v-if="item.name.toLowerCase().includes[filtraContatti]"></div> -->
                             <!-- `img/avatar${item.avatar}.jpg`-->
                             <!--<img :src="'img/avatar' + item.avatar + '.jpg'" class="avatar-img">-->
                             <!--<img :src="ottieniImmagine(item.avatar)" class="avatar-img">-->
