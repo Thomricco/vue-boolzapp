@@ -153,10 +153,19 @@ footer {
     width: 400px;
 }
 
+.box-messaggi::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
 .sent {
     width: 200px;
     background-color: rgb(18, 140, 126);
     border-radius: 10px;
+    float: right;
+
 }
 
 .received {

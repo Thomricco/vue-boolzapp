@@ -87,7 +87,7 @@ new Vue({
                 ],
             },
         ],
-        textTemoporaneo: '',
+        textTemporaneo: '',
         filtraContatti: '',
         
     },
@@ -106,7 +106,7 @@ new Vue({
                 status: 'sent'})
             this.textTemporaneo = '',
             setTimeout(()=> {
-                this.contacts[this.currentIndex].this.autoRisposta
+                this.autoRisposta();
             }, 1000)
         },
 
