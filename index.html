@@ -40,7 +40,9 @@
                         <input class="cerca" placeholder="cerca">
                              
             
-                        <div v-for="(item, i) in contacts" class=" d-flex box-avatar" >
+                        <div v-for="(item, i) in contacts" 
+                            @click="showContact(index)" 
+                            class=" d-flex box-avatar" >
                             <!-- `img/avatar${item.avatar}.jpg`-->
                             <!--<img :src="'img/avatar' + item.avatar + '.jpg'" class="avatar-img">-->
                             <!--<img :src="ottieniImmagine(item.avatar)" class="avatar-img">-->
@@ -65,7 +67,7 @@
                         <div class=""> 
                             <div v-for="message in contacts[currentIndex].messages" 
                                  class="d-flex flex-nowrap m-2 p-2"
-                                 :class="[message.status === 'sent' ? 'messaggi-inviati' : 'messaggi-ricevuti']">
+                                 :class="[message.status === 'sent' ? 'sent' : 'received']">
                                 {{ message.text }}
                             </div>
                         </div>

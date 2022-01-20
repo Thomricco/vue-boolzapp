@@ -30,6 +30,7 @@ body {
 .text-avatar {
     font-size: 15px;
     margin-left: 10px;
+    line-height: 20px;
     
 }
 .text-gray {
@@ -151,13 +152,13 @@ footer {
     width: 400px;
 }
 
-.messaggi-inviati {
+.sent {
     width: 200px;
     background-color: rgb(18, 140, 126);
     border-radius: 10px;
 }
 
-.messaggi-ricevuti {
+.received {
     width: 200px;
     background-color: #faf6f2;
     border-radius: 10px;

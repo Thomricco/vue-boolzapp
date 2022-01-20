@@ -92,19 +92,29 @@ new Vue({
     },
 
     methods: {
-        inviaMessaggio: function() {
-            this.contacts[this.currentIndex].messages.push({text: this.textTemporaneo, status: 'sent'})
+
+        showContact(index) {
+            this.currentIndex = (index);
+            setTimeout(()=> {
+                this.contacts[this.currentIndex].this.autoRisposta
+            }, 1000)
+        },
+
+        inviaMessaggio() {
+            this.contacts[this.currentIndex].messages.push({
+                date: '10/01/2020 15:50:00',
+                text: this.textTemporaneo, 
+                status: 'sent'})
             this.textTemporaneo = ''
         },
 
-        /*showContact: function(index) {
-            this.currentIndex.push(index,1)
-            
-            
-            showContact: function(index) {
-            this.contacts[this.currentIndex].s(index,1)
-        },
-        },*/
+        
+        autoRisposta() {
+            this.contacts[this.currentIndex].messages.push({
+                date: '10/01/2020 15:50:00',
+                text: 'ok',
+                status: 'received'})
+        }
     }
   
 })
