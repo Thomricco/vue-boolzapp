@@ -99,6 +99,7 @@ body {
 .box-avatar {
     padding-left: 10px;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 .cerca {
