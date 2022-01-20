@@ -6,19 +6,33 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#app {
+    background: hsla(0, 0%, 80%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 80%, 1) 65%, hsla(171, 39%, 42%, 1) 65%, hsla(171, 39%, 42%, 1) 66%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 80%, 1) 65%, hsla(171, 39%, 42%, 1) 65%, hsla(171, 39%, 42%, 1) 66%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 80%, 1) 65%, hsla(171, 39%, 42%, 1) 65%, hsla(171, 39%, 42%, 1) 66%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CCCCCC", endColorstr="#429588", GradientType=1 );
 }
 
 .container-zapp {
     width: 100%;
     margin: 0 auto;
-    background-color: #ccc;
+   
 }
 
 .bar {
     width: 100%;
     margin: 0 auto;
-    height: 100px;
-    background-color: teal;
+    height: 70px;
+    
 }
 
 .avatar-img {
@@ -41,9 +55,9 @@ body {
 .flex-box {
     display: flex;
     width: 800px;
-    margin: -90px auto;
+    margin: 0 auto;
     
-    padding-bottom: 50px;
+
 }
 
 .sidebar {
@@ -137,6 +151,8 @@ footer {
 
 .nav-lol {
     width: 300px;
+    height: 40px;
+    background-color: #ece5dd;
 }
 
 .nav-footer {
@@ -174,3 +190,4 @@ footer {
     border-radius: 10px;
     
 }
+
